@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --grid-cols:1;
+    --grid-rows:1;
+    
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+}
+
+
+#gridContainer{
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template-rows: repeat(var(--grid-rows),1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);  
+    background: white;
+    border: 1px solid black;
+}
+
+.gridItem {
+    border: 1px solid black;
+    text-align: center;
+}
